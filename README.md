@@ -9,7 +9,7 @@ A quick start run Coder on a local desktop and to run Docker within container-ba
 * Coder Binary [Installed](https://coder.com/docs/install)
 * Clone this repo
 
-Verify Coder CLI installed:
+Verify Coder installed:
 ```
 coder version
 ```
