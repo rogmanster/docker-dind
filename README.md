@@ -27,7 +27,7 @@ coder server &
 
 #### 3) Launch the Coder UI
 
-When coder server starts, the logs will show a public access url that was automatically created. If you choose not to use the public access url you can also connect to the localhost:3000. 
+When coder server starts, the logs will show a public access url that was automatically created. I recommend just using http://127.0.0.1:3000 to reduce latency and networking issues.
 
 ```
 Coder v2.16.0+683a720 - Your Self-Hosted Remote Development Platform
@@ -49,7 +49,7 @@ Opening tunnel so workspaces can connect to your deployment. For production scen
 unset CODER_SESSION_TOKEN
 ```
 ```
-coder login http(s)://<access url>
+coder login http://127.0.0.1:3000
 ```
 
 #### 6) Coder Push Templates & Deploy Workspaces
