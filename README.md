@@ -6,13 +6,8 @@ A quick start run Coder on a local desktop and to run Docker within container-ba
 #### 1) Prequisites for Mac
 
 * Running Docker Desktop 
-* Coder Binary [Installed](https://coder.com/docs/install)
+* Coder Server Binary [Installed](https://coder.com/docs/install)
 * Clone this repo
-
-Verify Coder installed:
-```
-coder version
-```
 
 #### 2) Start Coder server 
 
