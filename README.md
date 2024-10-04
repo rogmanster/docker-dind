@@ -20,6 +20,10 @@ To start Coder server on local mac (foreground):
 ```
 coder server
 ```
+or run in  background:
+```
+coder server &
+```
 
 #### 3) Launch the Coder UI
 
