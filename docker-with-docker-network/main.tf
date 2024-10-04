@@ -92,11 +92,6 @@ resource "coder_agent" "coder" {
   startup_script = <<EOT
 #!/bin/sh
 
-# clone repo
-if [ ! -d "flask-redis-docker-compose" ]; then
-  git clone --progress https://github.com/coder/flask-redis-docker-compose.git 
-fi
-
 # use coder CLI to clone and install dotfiles
 if [ ! -z "${data.coder_parameter.dotfiles_url.value}" ]; then
   coder dotfiles -y ${data.coder_parameter.dotfiles_url.value}
@@ -171,8 +166,4 @@ resource "coder_metadata" "workspace_info" {
     key   = "image"
     value = "docker.io/codercom/enterprise-base:ubuntu"
   }
-  item {
-    key   = "repo cloned"
-    value = "https://github.com/coder/flask-redis-docker-compose.git"
-  }     
 }
